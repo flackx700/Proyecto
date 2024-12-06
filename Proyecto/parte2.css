@@ -1,0 +1,214 @@
+/* Estilos Generales */
+body {
+    
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    background-color: #000000;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo de página general */
+h1, h2 {
+    color: #d35400;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+header {
+    background: linear-gradient(135deg, #7e137e, #f39c12);
+    color: #1a1a1a;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: none;
+}
+
+/* Menú de Navegación */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1rem;
+    padding: 8px 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #27ae60;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.navbar-toggler-icon {
+    background-color: #000000;
+}
+
+/* Biografía */
+#bio {
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#bio img {
+    border: 10px;
+    border: 3px solid #f39c12;
+    margin-top: 20px;
+    transition: transform 0.8s ease;
+}
+
+#bio img:hover {
+    transform: rotate(360deg);
+}
+
+#bio h2 {
+    background-color: #000000;
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#bio p {
+    background-color: #000000;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Especialidades */
+#especialidades {
+    background: linear-gradient(135deg, #7e137e, #f39c12);
+    padding: 60px 0;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+#especialidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+#especialidades ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#especialidades li {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    padding: 10px 25px;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+#especialidades li:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Proyectos */
+#proyectos {
+    padding: 60px 0;
+    background-color: #1a1a1a;
+}
+
+#proyectos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #7e137e;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.card {
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    transition: opacity 0.3s ease;
+}
+
+.card img:hover {
+    opacity: 0.9;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+    background-color: #262626;
+    color: #ccc;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #000000;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+

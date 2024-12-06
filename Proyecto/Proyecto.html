@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Logo -->
+    <header class="container text-center py-5">
+        <img src="logo.webp" alt="Mi Logotipo" class="img-fluid" width="300">
+        <h1>Mi Portafolio Derian</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#bio">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#especialidades">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Biografía -->
+    <section id="bio" class="py-5">
+        <div class="container">
+            <h2>Biografía</h2>
+            <p>Mi breve reseña profesional es que aunque va muy poco tiempo que llevo de esto ya tengo una base 
+                de la programacion que es hacer una sencilla pagina web pero funcionable, al igual que se vean bien y 
+                funcionables  
+            </p>
+            <img src="foto.jpeg" alt="Foto Profesional" class="img-fluid rounded-circle" width="200">
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="bg-light py-5">
+        <div class="container">
+            <h2>Especialidades</h2>
+            <p>Las siguientes tecnologias y herramientas son algunas que logro dominar</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <!-- Proyectos -->
+<section id="proyectos" class="py-5">
+    <div class="container">
+        <h2>Proyectos</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="card mb-4">
+                    <img src="proyecto1.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">En mi primer proyecto importante hice la realizacion de un sistema 
+                            de riego automatico desde cero para la feria de ciencias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="card mb-4">
+                    <img src="proyecto2.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">En mi segundo proyecto, realicé un trabajo de electronica
+                            el cual consistió en armar un cubo de leds de 3x3x3, programandolo a que llevara una serie de 
+                            encendidos determinado por mi codigo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="card mb-4">
+                    <img src="proyecto3.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Mi tercer proyecto es una página de una juguetería que te enseña todos los juguetes 
+                            que tiene, con su ubicación, enlaces, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¡Contacta conmigo a través de las siguientes opciones!</p>
+            <ul class="list-unstyled">
+                <li><a href="https://github.com/flackx700/Proyecto.git" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/_flackx_" target="_blank">Instagram</a></li>
+                <li>Teléfono: 2211191803</li>
+                <li>Email: yasel1301@gmail.com</li>
+            </ul>
+
+            <h3>Formulario de Contacto</h3>
+            <form action="contacto.php" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" name="asunto" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#bio" class="text-white">Biografía</a></li>
+            <li class="list-inline-item"><a href="#especialidades" class="text-white">Especialidades</a></li>
+            <li class="list-inline-item"><a href="#proyectos" class="text-white">Proyectos</a></li>
+            <li class="list-inline-item"><a href="#contacto" class="text-white">Contacto</a></li>
+            
+        </ul>
+        <p>Desarrollado por Derian</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="parte3.js" defer></script>
+<link rel="stylesheet" href="parte2.css">
+</body>
+</html>
+
